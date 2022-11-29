@@ -1,0 +1,248 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            body {
+                                display: flex;
+                                min-height: 100vh;
+                                background: black;
+                            }
+                            
+                            .container {
+                                display: flex;
+                                position: absolute;
+                                width: 200px;
+                                height: 200px;
+                                left: 10%;
+                                top: 10%;
+                                border-radius: 20px;
+                                /*   background: -webkit-linear-gradient( rgb(17, 255, 0), skyblue, rgb(255, 0, 247));
+                             */
+                                background: white;
+                            }
+                            
+                            .con {
+                                display: flex;
+                                position: absolute;
+                                inset: 0;
+                                overflow: hidden;
+                                border-radius: 20px;
+                            }
+                            
+                            .con::before {
+                                content: '';
+                                position: absolute;
+                                height: 70px;
+                                width: 250px;
+                                left: -15%;
+                                top: 0%;
+                                border-radius: 20px;
+                                background: -webkit-repeating-linear-gradient(skyblue, rgb(125, 26, 157), rgb(238, 112, 8), rgb(236, 171, 7));
+                                animation: animate 0.8s linear infinite;
+                            }
+                            
+                            @keyframes animate {
+                                0% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            
+                            .con2::before {
+                                content: '';
+                                position: absolute;
+                                height: 70px;
+                                width: 250px;
+                                left: -15%;
+                                top: 65%;
+                                border-radius: 20px;
+                                background: -webkit-repeating-linear-gradient(skyblue, rgb(108, 24, 210), rgb(232, 136, 18), rgb(236, 171, 7));
+                                animation: animate 0.8s linear infinite;
+                            }
+                            
+                            .con::after {
+                                content: 'ABHISHEK';
+                                letter-spacing: 10px;
+                                font-size: 22px;
+                                font-weight: 600;
+                                color: white;
+                                position: absolute;
+                                background: -webkit-linear-gradient( rgb(17, 255, 0), rgb(255, 0, 247));
+                                background-image: url(/img/boy.png);
+                                background-size: cover;
+                                inset: 5px;
+                                border-radius: 20px;
+                            }
+                            
+                            .con2::after {
+                                content: '';
+                                position: absolute;
+                                /*  background: -webkit-linear-gradient( rgb(17, 255, 0), rgb(255, 0, 247));
+                                 */
+                                inset: 10px;
+                            }
+                            
+                            .conic {
+                                display: flex;
+                                position: absolute;
+                                width: 200px;
+                                height: 200px;
+                                left: 20%;
+                                top: 30%;
+                                margin-top: 200px;
+                                border-radius: 7px;
+                                overflow: hidden;
+                                cursor: pointer;
+                            }
+                            
+                            .conic2::before {
+                                content: '';
+                                position: absolute;
+                                width: 300px;
+                                height: 300px;
+                                border-radius: 10px;
+                                top: -22%;
+                                left: -22%;
+                                background-image: conic-gradient( red, blue, yellow, green, rgb(255, 176, 28), rgb(230, 28, 183));
+                                animation: animate4 2s linear infinite;
+                            }
+                            
+                            @keyframes animate4 {
+                                0% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            
+                            .conic2::after {
+                                content: 'Abhishek';
+                                letter-spacing: 14px;
+                                font-size: 22px;
+                                font-weight: 600;
+                                color: white;
+                                position: absolute;
+                                background-image: url(/img/boy.png);
+                                background-size: cover;
+                                inset: 5px;
+                            }
+                            
+                            .ring {
+                                display: flex;
+                                position: absolute;
+                                inset: 0;
+                                overflow: hidden;
+                            }
+                            
+                            .ring::before {
+                                content: '';
+                                position: absolute;
+                                width: 60px;
+                                height: 60px;
+                                top: 40%;
+                                left: 70%;
+                                border-radius: 50%;
+                                background-image: conic-gradient(red, blue, yellow, green, rgb(255, 176, 28), rgb(230, 28, 183));
+                                animation: animate6 2s linear infinite;
+                                animation-fill-mode: forwards;
+                            }
+                            
+                            @keyframes animate6 {
+                                0% {
+                                    transform: rotate(360deg);
+                                }
+                                15% {
+                                    transform: rotateX(90deg);
+                                }
+                                30% {
+                                    transform: translateX(300%);
+                                }
+                                40% {
+                                    transform: translateX(-300%)
+                                }
+                                60% {
+                                    transform: scale(50%);
+                                }
+                                80% {
+                                    transform: translateY(300%);
+                                }
+                                96% {
+                                    transform: translateY(-300%);
+                                }
+                            }
+                            
+                            .ring::after {
+                                content: '';
+                                position: absolute;
+                                background: skyblue;
+                                inset: 1;
+                            }
+                            
+                            .rotate {
+                                display: flex;
+                                position: absolute;
+                                width: 80px;
+                                height: 80px;
+                                left: 60%;
+                                top: 60%;
+                                background: transparent;
+                                border-radius: 50%;
+                                box-shadow: -5px 0 0 rgb(255, 128, 0);
+                                animation: animate7 0.4s linear infinite;
+                            }
+                            
+                            .rotate1 {
+                                display: flex;
+                                position: absolute;
+                                width: 80px;
+                                height: 80px;
+                                left: 62%;
+                                top: 60%;
+                                background: transparent;
+                                border-radius: 50%;
+                                box-shadow: -5px 0 0 rgb(0, 221, 255);
+                                animation: animate7 0.4s linear infinite forwards;
+                            }
+                            
+                            .rotate2 {
+                                display: flex;
+                                position: absolute;
+                                width: 80px;
+                                height: 80px;
+                                left: 64%;
+                                top: 60%;
+                                background: transparent;
+                                border-radius: 50%;
+                                box-shadow: -5px 0 0 rgb(98, 255, 0);
+                                animation: animate7 0.4s linear infinite forwards;
+                            }
+                            
+                            @keyframes animate7 {
+                                0% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            
+                            .rotate3 {
+                                display: flex;
+                                position: absolute;
+                                width: 80px;
+                                height: 80px;
+                                left: 66%;
+                                top: 60%;
+                                background: transparent;
+                                border-radius: 50%;
+                                box-shadow: -5px 0 0 blue;
+                                animation: animate7 0.4s linear infinite forwards;
+                            }
+                            
+                            .rotate4 {
+                                display: flex;
+                                position: absolute;
+                                width: 80px;
+                                height: 80px;
+                                left: 68%;
+                                top: 60%;
+                                background: transparent;
+                                border-radius: 50%;
+                                box-shadow: -5px 0 0 rgb(219, 8, 205);
+                                animation: animate7 0.4s linear infinite forwards;
+                            }
